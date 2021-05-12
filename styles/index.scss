@@ -1,10 +1,12 @@
-@import './pages/about/highlights';
+@import './base/reset';
+
+@import './pages/home/home';
+
+@import './pages/about/highlight';
 @import './pages/about/gallery';
 @import './pages/about/content';
 @import './pages/about/about';
 
-@import './pages/collections';
+@import './pages/collections/collections';
 
-@import './pages/home/home';
-
-@import './pages/details';
+@import './pages/details/details';
