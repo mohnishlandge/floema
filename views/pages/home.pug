@@ -4,4 +4,15 @@ block variables
   - var template = 'home'
 
 block content
-  h1.collections__title Home
+  .home 
+    .home__wrapper
+      .collections__titles 
+          each collection, index in collections
+            .collections__titles__label=`${home.data.collection} ${Numbers(index)}`
+            .collections__titles__title=collection.data.title
+
+      each media in home.data.gallery
+        figure.home__gallery__media
+          img.home__gallery__media__image(alt=media.image.al src=media.image.url)
+
+    a(href=Link(home.data.collections))=home.data.button

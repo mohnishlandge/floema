@@ -6,9 +6,11 @@ html(lang='en')
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
-    title Floema
+    base(href="/")
 
-    meta(name="description" content="Floema beautiful jewlery.")
+    title=meta.data.title
+
+    meta(name="description" content=meta.data.description)
 
     link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch.icon.png")
     link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
@@ -17,15 +19,15 @@ html(lang='en')
     meta(name="msapplication-TileColor" content="#f4d8cc")
     meta(name="theme-color" content="#f4d8cc")
 
-    //- meta(property="og:type" content="website")
-    //- meta(property="og:title" content=meta.data.title)
-    //- meta(property="og:description" content=meta.data.description)
-    //- meta(property="og:image" content=meta.data.image ? meta.data.image.url : '')
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=meta.data.title)
+    meta(property="og:description" content=meta.data.description)
+    meta(property="og:image" content=meta.data.image ? meta.data.image.url : '')
 
-    //- meta(name="twitter:card" content="summary_large_image")
-    //- meta(name="twitter:title" content=meta.data.title)
-    //- meta(name="twitter:description" content=meta.data.description)
-    //- meta(name="twitter:image" content=meta.data.image ? meta.data.image.url : '')
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content=meta.data.title)
+    meta(name="twitter:description" content=meta.data.description)
+    meta(name="twitter:image" content=meta.data.image ? meta.data.image.url : '')
 
     link(href="main.css" rel="stylesheet") 
 

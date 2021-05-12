@@ -1,5 +1,10 @@
-$color-white: #fff;
+@import './pages/about/highlights';
+@import './pages/about/gallery';
+@import './pages/about/content';
+@import './pages/about/about';
 
-.class {
-  color: "#color-white";
-}
+@import './pages/collections';
+
+@import './pages/home/home';
+
+@import './pages/details';

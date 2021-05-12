@@ -17,6 +17,7 @@
     "concurrently": "^6.1.0",
     "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.2.4",
+    "errorhandler": "^1.5.1",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-loader": "^4.0.2",
@@ -42,8 +43,14 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "@prismicio/client": "^4.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
+    "prismic-dom": "^2.2.5",
     "pug": "^3.0.2"
   }
 }
