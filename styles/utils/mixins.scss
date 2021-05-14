@@ -1,13 +1,18 @@
 %cover {
   height: 100%;
   left: 0;
-  object-fit: cover;
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-@mixin ratio($height, $width) {
+%center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin ratio ($height, $width) {
   font-size: 0;
   overflow: hidden;
   position: relative;
